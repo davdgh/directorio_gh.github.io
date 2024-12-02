@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <h1>Añadir Nuevo Contacto</h1>
+            <a href="index.html" class="btn">Volver al Inicio</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccion-formulario">
+            <form id="formulario-contacto">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">Guardar Contacto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diccionario de Contactos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

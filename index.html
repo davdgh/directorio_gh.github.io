@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario de Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <h1>Diccionario de Contactos</h1>
+            <p id="fecha-hoy"></p> <!-- Aquí se mostrará la fecha -->
+            <p id="numero-contactos">Contactos guardados: 0</p> <!-- Aquí se mostrará el número de contactos -->
+            <a href="#" class="btn" onclick="mostrarFormulario()">Añadir Contacto</a>
+        </div>
+    </header>
+    <main>
+        <section class="seccion-formulario" id="formulario-contacto">
+            <form id="form-contacto">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Guardar Contacto</button>
+            </form>
+        </section>
+        <section class="lista-contactos" id="lista-contactos">
+            <!-- Aquí se añadirán los contactos -->
+        </section>
+    </main>
+    <footer>
+        <p>Hecho por gh_davddd</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
